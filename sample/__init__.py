@@ -1,5 +1,5 @@
-from scraper import Scraper
-from Input_ import Input_
+from core import Scraper
+from get_input import Input_
 import json
 if __name__== "__main__":
     
@@ -16,7 +16,8 @@ if __name__== "__main__":
     data_ = scr.data  # the all data we got.
 
     #save the data
-    with open("sahibinden.json","w", encoding="utf-8") as f:
+    path = "output//sahibinden.json"
+    with open(path,"w", encoding="utf-8") as f:
         json.dump(data_, f, ensure_ascii=False, indent=4)
     
     # THATS IT! WE FINISHED YEEEEY!
