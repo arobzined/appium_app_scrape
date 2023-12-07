@@ -100,7 +100,7 @@ You can install required packages using
 2. Open your terminal and run:
 >appium
 3. Open another terminal , run:
->python code/main.py
+>python sample/main.py
 
 The Input of the code is placed default in the "main.py" file. You can change the variables in the input or , you can change the input with:
 >inputs.get_input()
